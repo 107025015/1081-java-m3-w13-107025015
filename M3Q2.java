@@ -3,15 +3,14 @@ import java.util.Scanner;
 
 public class M3Q2
 {
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
         Scanner scn=new Scanner(System.in);
-        int input=scn.nextInt();
-        Random rand=new Random();
-        rand.setSeed(input);
-        for (int i=0;i<6;i++)
-        {
-            System.out.print(rand.nextInt(42)+1+"   ");
+        Random randum=new Random();
+        long input=scn.nextLong();
+        randum.setSeed(input);
+        for (int i=0;i<6;i++){
+            int output=randum.nextInt(42)+1;
+            System.out.print(output+"\t");
         }
         System.out.println();
     }
